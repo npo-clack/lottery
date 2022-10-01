@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  # 開発用
+  server:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    init: true
+    volumes:
+      # bind mount files
+      - '.:/home/node/lottery'
+      # volume mount only node_modules
+      - node_modules_cached:/home/node/lottery/node_modules
+
+volumes:
+  node_modules_cached:

@@ -2,8 +2,15 @@
 
 ## setup
 
-1. nodejsをローカルPCにインストールする。Macならnvmおすすめ
+1. nodejsをローカルPCにインストールする。Macならnvmおすすめ。もしくはDockerから実行。
 2. npm install
+
+### Dockerから実行する場合
+
+1. Docker for Desktopをインストール
+2. (初回のみ)レポジトリのルートで`docker-compose build server`を実行。
+3. `docker-compose run --rm server sh`を実行してコンテナに入る。
+4. コンテナ内で`npm run start`を実行。
 
 ## 実行
 sample.csvをdata.csvにファイル名を変更
