@@ -1,0 +1,28 @@
+{
+  "name": "lottery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/npo-clack/lottery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npo-clack/lottery/issues"
+  },
+  "homepage": "https://github.com/npo-clack/lottery#readme",
+  "dependencies": {
+    "@types/node": "^14.18.31",
+    "csv-parse": "^5.3.0",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
